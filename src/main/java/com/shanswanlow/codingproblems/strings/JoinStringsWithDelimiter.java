@@ -7,13 +7,13 @@ public class JoinStringsWithDelimiter
 {
     public static void main(String[] args)
     {
-        System.out.println(joinWithDelimiter(" ", "foo", "bar"));
-        System.out.println(joinWithDelimiter("\n", "baz", "quux", "quuux"));
+        System.out.println(joinWithDelimiter(' ', "foo", "bar"));
+        System.out.println(joinWithDelimiter('\n', "baz", "quux", "quuux"));
     }
 
-    private static String joinWithDelimiter(String delimiter, String... args)
+    private static String joinWithDelimiter(char delimiter, String... args)
     {
         return Arrays.stream(args)
-                .collect(Collectors.joining(delimiter));
+                .collect(Collectors.joining(Character.toString(delimiter)));
     }
 }
