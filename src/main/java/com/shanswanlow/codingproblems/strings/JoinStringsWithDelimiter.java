@@ -5,7 +5,8 @@ import java.util.stream.Collectors;
 
 public class JoinStringsWithDelimiter
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         System.out.println(joinWithDelimiter(" ", "foo", "bar"));
         System.out.println(joinWithDelimiter("\n", "baz", "quux", "quuux"));
     }
